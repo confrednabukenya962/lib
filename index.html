@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UMU library</title>
+    <link rel="stylesheet" href="umu.css">
+</head>
+<body>
+    <div class="main">
+<div class="HEADING">
+<h1>UMU LIBRARY</h1>
+</div>
+            <div class="tab">
+                    <button class="tablinks" onclick="openpart(event, 'Home')" id="defaultOpen">Home</button>
+                    <button class="tablinks" onclick="openpart(event, 'About')">About</button>
+                    <button class="tablinks" onclick="openpart(event, 'Contact')">Contact us</button>
+                    <button class="tablinks" onclick="openpart(event, 'Service')">Service</button>
+                    <button class="tablinks" onclick="openpart(event, 'Identify Me')">Identify Me</button>
+                    <button class="tablinks" onclick="openpart(event, 'Research')">Research</button>
+                    <button class="tablinks" onclick="openpart(event, 'Website')">Website</button>
+            </div>
+                  
+            <div id="Home" class="tabcontent">
+                <h3>Home</h3>
+                <div class="topnav">
+                        <input type="text" placeholder="Search..">
+                </div> 
+                <div class="catalog">
+                    <h3> library Catalog</h3>
+                    <p>Find library books,CDs,DVDs, and more.</p>
+                    <input type="text" name="enter serch item" placeholder="Enter Search item..">
+                    <input type="button" name="search" value="Search"></br>
+                    <h3>Online Resources</h3>
+                    <p>Find articles, journals,...</article></p>
+                    <input type="text" name="enter serch item" placeholder="Enter Search item..">
+                    <input type="button" name="Go" value="Go">
+                </div>
+            </br>
+                <p>Opening Hours</p> 
+                    <ul>
+                        <p>MONDAY-FRIDAY :8;30am-10:00pm</p>
+                        <p>SATURDAY : 9:00am-6:00pm</p>
+                        <p>SUNDAY  :11:00am-2:00pm</p>
+                    </ul>
+            </div>
+            <div id="About" class="tabcontent">
+                 <div class="catalog">
+                    <h3> library Catalog</h3>
+                    <p>Find library books,CDs,DVDs, and more.</p>
+                    <input type="text" name="enter serch item" placeholder="Enter Search item..">
+                    <input type="button" name="search" value="Search"></br>
+                    <h3>Online Resources</h3>
+                    <p>Find articles, journals,...</article></p>
+                    <input type="text" name="enter serch item" placeholder="Enter Search item..">
+                    <input type="button" name="Go" value="Go">
+                </div>
+                <div class="options">
+                        <ul>
+                            <p>Mission statement</p>
+                            <p>Libraries</p>
+                            <p>library Hours</p>
+                            <p>Photo gallery</p>
+                        </ul>
+                    </div>   
+            </div>
+            <div id="Contact" class="tabcontent">
+                <div class="catalog">
+                    <h3>Catalog</h3>
+                    <p>Find library books,CDs,DVDs, and more.</p>
+                    <input type="text" name="enter serch item" placeholder="Enter Search item..">
+                    <input type="button" name="search" value="Search"></br>
+                    <h3>Online Resources</h3>
+                    <p>Find articles, journals,...</article></p>
+                    <input type="text" name="enter serch item" placeholder="Enter Search item..">
+                    <input type="button" name="Go" value="Go">
+                </div>
+                <div class="contact us">
+                    <p>Contact us</p>
+                    <h4>Uganda Martyrs University Library</h4>
+                    <ul>
+                        <p>P.O box 5498,kamapala</p>
+                        <p>Uganda</p>
+                        <p>library@umu.ac.ug</p>
+                        <p>+256-382410611</p>
+                    </ul>
+                </div>
+            </div>
+            <div id="Service" class="tabcontent">
+                <h3>Services</h3>
+                <p>The llibrary resources are accesible to students and the university staffof UGANDA MARTYRS.</p>
+                <P>to access these resources, you need to log in with the library username and password</P>
+                <p>links to the services are available under th service menu on the main menu or the catalogue search box</p>
+                <h4>Online journals</h4>
+                <p>we alsoprovide services of online journals arranged in alpabetical order</p>
+                <p>the journals can be decide by choice through navigation using arrow buttons</p>
+            </div>
+            <div id="Identify Me" class="tabcontent">
+                <h3>log in</h3>
+                <form>
+                    <label>Username*</label>  <input type="text" value="Username" name="username" placeholder="Username">
+                    <br>
+                    <label>Password*</label>  <input type="password" value="password" name="password" placeholder="Password">
+                    <br>
+                    <input type="button" value="submit">
+                </form>
+            </div>
+            <div id="Research" class="tabcontent">    
+            <h3>Academic Units</h3>
+            <ul>
+            <li>Faculty of Health Sciences (96)</li>
+            <li>Faculty of Business Administration and Management (21)</li>
+            <li>School of Arts and Social Sciences (42)</li>
+            <li>Faculty of Agriculture (51)</li>
+            <li>Faculty of Education (31)</li>
+            <li>Institute of Ethics (1)</li>
+            <li>Faculty of The Built Environment (35)</li>
+            <li>Mother Kevin Post Graduate Medical School (11)</li>
+            <li>Faculty of Science (30)</li>
+            <li>School of Postgraduate Studies and Research (42)</li>
+    
+            <li>More...</li>
+            </ul>
+
+            </div>
+            <div id="Website" class="tabcontent">
+                <img height="200" width="500" src="2k.jpg">
+                <a href="umuwebsite.html">Website</a>
+            </div>
+            <script>
+                    function openpart(evt, cityName) {
+                      var i, tabcontent, tablinks;
+                      tabcontent = document.getElementsByClassName("tabcontent");
+                      for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                      }
+                      tablinks = document.getElementsByClassName("tablinks");
+                      for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                      }
+                      document.getElementById(cityName).style.display = "block";
+                      evt.currentTarget.className += " active";
+                    }
+                    
+                    // Get the element with id="defaultOpen" and click on it
+                    document.getElementById("defaultOpen").click();
+                </script>
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+       
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
